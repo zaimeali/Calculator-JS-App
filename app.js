@@ -1,12 +1,14 @@
 let currentNumber = "";
 let currentOperation ="";
 let secondNumber ="";
+let result = 0;
 
 function clearScreen(){
     document.getElementById("calScreen").value = "0";
     currentNumber = "";
     secondNumber = "";
     currentOperation = "";
+    result = "";
 }
 
 function getNumber(num){
@@ -22,11 +24,12 @@ function getNumber(num){
 
 function getOp(op){
     let currentScreenNumber = document.getElementById("calScreen").value;
-    if(currentScreenNumber.length > 0){
-        alert("Nice");
-    }
     if(currentNumber.length === 0){
         currentNumber = "0";
+    }
+    if(currentScreenNumber !== '0'){
+        currentNumber = currentScreenNumber;
+        secondNumber = "";
     }
     currentOperation = op;
 }
@@ -37,7 +40,6 @@ function letCalculate(){
     }
     let num1 = +currentNumber;
     let num2 = +secondNumber;
-    let result = 0;
     if(currentOperation === "+"){
         result = num1 + num2;
     }
@@ -51,4 +53,5 @@ function letCalculate(){
         result = num1 * num2;
     }
     document.getElementById("calScreen").value = result;
+    currentOperation = "";
 }

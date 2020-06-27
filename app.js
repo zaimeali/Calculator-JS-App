@@ -11,6 +11,17 @@ function clearScreen(){
     result = "";
 }
 
+function getDecimal(){
+    if(!currentNumber.includes('.') && currentNumber.length > 0){
+        currentNumber += '.';
+        document.getElementById('calScreen').value = currentNumber;
+    }
+    if(!secondNumber.includes('.') && secondNumber.length > 0){
+        secondNumber += '.';
+        document.getElementById('calScreen').value = secondNumber;
+    }
+}
+
 function getNumber(num){
     if(currentOperation.length === 0){
         currentNumber += num;

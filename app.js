@@ -73,7 +73,7 @@ function calculatorKeys(e){
     if(e.keyCode == 13 || e.keyCode == 187){
         letCalculate();
     }
-    else if(["+", "-", "*", "/"].includes(String.fromCharCode(e.keyCode))){
+    else if((e.keyCode >= 96 && e.keyCode <= 105) || ["+", "-", "*", "/"].includes(String.fromCharCode(e.keyCode))){
         
         currentOperation = String.fromCharCode(e.keyCode);
         if(currentNumber.length > 0){

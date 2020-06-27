@@ -21,6 +21,10 @@ function getNumber(num){
 }
 
 function getOp(op){
+    let currentScreenNumber = document.getElementById("calScreen").value;
+    if(currentScreenNumber.length > 0){
+        alert("Nice");
+    }
     if(currentNumber.length === 0){
         currentNumber = "0";
     }

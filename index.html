@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="no-select">
 
         <div class="container">
             <div class="row">
@@ -21,9 +21,88 @@
                         <h2 class="text-center custom-heading">Calculator JS App</h2>
                         <hr>
                         <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div>
-                                    
+                            <div class="col-md-6 col-sm-6 offset-md-3 offset-sm-3">
+                                <div class="calculator">
+                                    <input value="0" type="text" class="calculator-screen form-control col-sm-12 col-md-12 py-3 no-select" disabled>
+
+                                    <div class="calculator-keys mt-3">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row px-2 py-3">
+                                                    <div class="col-md-7 col-sm-7 col-xs-7 offset-md-1 offset-sm-1 offset-xs-1">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">7</button>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">8</button>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">9</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">4</button>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">5</button>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">6</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">1</button>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">2</button>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-4 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">3</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12 px-2 py-2">
+                                                                <button class="mx-auto btn btn-warning btn-block">0</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                        <div class="row py-2 w-50 mx-auto">
+                                                            <button class="btn btn-info btn-block px-3 op-btn">+</button>
+                                                        </div>
+                                                        <div class="row py-2 w-50 mx-auto">
+                                                            <button class="btn btn-info btn-block px-3 op-btn">-</button>
+                                                        </div>
+                                                        <div class="row py-2 w-50 mx-auto">
+                                                            <button class="btn btn-info btn-block px-3 op-btn">x</button>
+                                                        </div>
+                                                        <div class="row py-2 w-50 mx-auto">
+                                                            <button class="btn btn-info btn-block px-3 op-btn">/</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr class="min-mt-10">
+                                                <div class="row px-2">
+                                                    <div class="col-md-12">
+                                                        <div class="row px-2">
+                                                            <div class="col-md-3 col-sm-3 pb-3 mr-auto ml-4">
+                                                                <button class="btn btn-primary btn-block btn-dot">=</button>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-3 pb-3 mx-auto">
+                                                                <button class="btn btn-primary btn-block btn-dot">.</button>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-3 pb-3 ml-auto mr-5">
+                                                                <button class="btn btn-danger btn-block">AC</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -4,6 +4,9 @@ let secondNumber ="";
 
 function clearScreen(){
     document.getElementById("calScreen").value = "0";
+    currentNumber = "";
+    secondNumber = "";
+    currentOperation = "";
 }
 
 function getNumber(num){
@@ -33,6 +36,15 @@ function letCalculate(){
     let result = 0;
     if(currentOperation === "+"){
         result = num1 + num2;
+    }
+    else if(currentOperation === "-"){
+        result = num1 - num2;
+    }
+    else if(currentOperation === "/"){
+        result = num1 / num2;
+    }
+    else if(currentOperation === "x"){
+        result = num1 * num2;
     }
     document.getElementById("calScreen").value = result;
 }

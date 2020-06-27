@@ -64,5 +64,29 @@ function letCalculate(){
         result = num1 * num2;
     }
     document.getElementById("calScreen").value = result;
+    currentNumber = result;
     currentOperation = "";
+    secondNumber = "";
+}
+
+function calculatorKeys(e){
+    if(e.keyCode == 13 || e.keyCode == 187){
+        letCalculate();
+    }
+    else if(["+", "-", "*", "/"].includes(String.fromCharCode(e.keyCode))){
+        
+        currentOperation = String.fromCharCode(e.keyCode);
+        if(currentNumber.length > 0){
+        }
+    }
+    else{
+        if(currentOperation.length > 0){
+            secondNumber += String.fromCharCode(e.keyCode);
+            document.getElementById("calScreen").value = secondNumber;
+        }
+        else{
+            currentNumber += String.fromCharCode(e.keyCode);
+            document.getElementById("calScreen").value = currentNumber;
+        }
+    }
 }
